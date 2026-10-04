@@ -7,7 +7,7 @@
     "start": "node server.js",
     "dev": "node --watch src/server.js",
     "db:init": "psql \"$DATABASE_URL\" -f schema.sql && psql \"$DATABASE_URL\" -f seed.sql",
-    "create-admin": "node scripts/create-admin.js"
+    "create-admin": "node create-admin.js"
   },
   "engines": { "node": ">=18" },
   "dependencies": {
