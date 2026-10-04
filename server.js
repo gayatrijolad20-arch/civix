@@ -42,7 +42,6 @@ app.get('/api/health', async (_req, res) => {
 app.use('/api', require('./routes/auth'));
 app.use('/api', require('./routes/areas'));
 app.use('/api', require('./routes/issues'));
-app.use('/api', require('./routes/admin'));
 app.use('/api', (_req, res) => res.status(404).json({ error: 'Not found' }));
 
 // Uploaded complaint photos + the frontend (drop civix_management_system.html into /public as index.html)
