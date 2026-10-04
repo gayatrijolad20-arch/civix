@@ -28,7 +28,7 @@ if (origins.length) app.use(cors({ origin: origins }));
 
 app.use(express.json({ limit: '100kb' }));
 app.use('/api', rateLimit({ windowMs: 60 * 1000, limit: 120, standardHeaders: true, legacyHeaders: false }));
-app.use('/api', authenticate);
+
 
 app.get('/api/health', async (_req, res) => {
   try {
