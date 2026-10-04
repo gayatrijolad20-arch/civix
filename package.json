@@ -2,7 +2,7 @@
   "name": "civix-backend",
   "version": "1.0.0",
   "description": "Geolocation-based civic issue reporting API (Express + PostgreSQL/PostGIS)",
-  "main": "src/server.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js",
