@@ -46,8 +46,8 @@ app.use('/api', require('./routes/admin'));
 app.use('/api', (_req, res) => res.status(404).json({ error: 'Not found' }));
 
 // Uploaded complaint photos + the frontend (drop civix_management_system.html into /public as index.html)
-app.use('/uploads', express.static(process.env.UPLOAD_DIR || path.join(__dirname, '..', 'uploads'), { fallthrough: false }));
-app.use(express.static(path.join(__dirname, '..', 'public')));
+app.use('/uploads', express.static(process.env.UPLOAD_DIR || path.join(__dirname, 'uploads'), { fallthrough: false }));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(errorHandler);
 
