@@ -5,7 +5,7 @@
   "main": "src/server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node --watch src/server.js",
+    "dev": "node --watch server.js",
     "db:init": "psql \"$DATABASE_URL\" -f schema.sql && psql \"$DATABASE_URL\" -f seed.sql",
     "create-admin": "node create-admin.js"
   },
